@@ -1,0 +1,276 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;700;900&display=swap");
+/* ESTILOS GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: #081c15;
+  font-family: "Grenze Gotisch", cursive;
+}
+/* -------------------------------BARRA GLOBAL------------------------------------------------------- */
+.LogoPrincipal {
+  width: 10%;
+  margin: 1% 0 0 1%;
+}
+.LogoPrincipal:hover {
+  filter: drop-shadow(2px 2px 6px black);
+  transition-duration: 150ms;
+}
+.btn-menu {
+  height: 10%;
+  width: 10%;
+  display: flex;
+  margin: -6% 0 0 91.5%;
+}
+.LogoMenu {
+  width: 50%;
+}
+.LogoMenu:hover {
+  width: 55%;
+  filter: drop-shadow(3px 3px 6px rgb(0, 0, 0));
+  transition-duration: 150ms;
+  margin-top: -5%;
+}
+/* BARRA DE NAVEGACION DESPLEGABLE */
+#btn-menu {
+  display: none;
+}
+.container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background: #1b4332;
+  height: 100vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+.cont-menu nav {
+  transform: translateY(15%);
+}
+.cont-menu nav a {
+  font-weight: 700;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #c7c7c7;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+.cont-menu nav a:hover {
+  border-left: 5px solid #40916c;
+  background: #2d6a4f;
+  color: orange;
+}
+.cont-menu label {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  color: orange;
+  cursor: pointer;
+  font-size: 18px;
+}
+.cont-menu label:hover {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+/* FIN BARRA DE NAVEGACION DESPLEGABLE */
+/* ----------------------------------------------------FIN BARRA GLOBAL-------------------------------------------------- */
+/* ----------------------------------------------------ViDEO-------------------------------------------------- */
+.video-background {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 168px;
+}
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 168px;
+  object-fit: cover;
+  z-index: -1;
+}
+.titulos {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 10% 5%;
+  color: white;
+}
+h1 {
+  padding: 5% 0 5% 0;
+  font-size: 80px;
+  color: rgb(255, 102, 0);
+}
+@media (max-width: 1500px) {
+  h1 {
+    padding: 13% 0 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .titulos {
+    padding: 20% 10px;
+  }
+}
+.pinos {
+  margin-top: 25%;
+  min-height: 750px;
+  width: 100%;
+  background-image: url(../images/FondoPinos.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.montanasAbajo {
+  margin-top: -15%;
+  min-height: 600px;
+  width: 100%;
+  background-image: url(../images/montanasarriba.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.montanasArriba {
+  margin-top: -2%;
+  min-height: 400px;
+  width: 100%;
+  background-image: url(../images/montanasabajo.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* ----------------------------------------------------FIN ViDEO-------------------------------------------------- */
+/*--------------------------------------------------PRINCIPAL----------------------------------------------- */
+main {
+  height: 1000px;
+  background-color: #081c15;
+}
+h2 {
+  font-size: 80px;
+  text-align: center;
+  color: rgb(189, 79, 7);
+}
+iframe {
+  width: 100%;
+  height: 80%;
+  margin-bottom: 10%;
+}
+.noche {
+  background-color: black;
+  min-height: 168px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("../images/circuloinfierno.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.relleno{
+  background-color: #081c15;
+  height: 100px;
+}
+h3 {
+  margin-top: 10%;
+  text-align: center;
+  font-size: 80px;
+  color: rgb(255, 102, 0);
+}
+
+#historia {
+  background-color: black;
+  background-image: url(../images/jagger_bosque.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+#historia p {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin: 50px 20px;
+}
+
+.intro {
+  width: 100%;
+}
+
+.historia_container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.historia_item {
+  width: 40%;
+  height: 400px;
+  margin: 50px;
+}
+
+.historia_item h4 {
+  margin-left: 15px;
+  margin-bottom: -50px;
+  color: rgb(255, 102, 0);
+  font-size: 40px;
+}
+
+#historia .historia_item p {
+  text-align: justify;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 230%;
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  footer p {
+    font-family: Montserrat;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+footer ul {
+    list-style: none;
+}

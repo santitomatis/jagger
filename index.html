@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jäggermeinster</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="video-background" #inicio>
+      <video
+        autoplay
+        muted
+        loop
+        id="video-bg"
+        muted="muted"
+        loop=""
+        autoplay=""
+      >
+        <source src="./images/VideoFondo.mp4" type="video/mp4" />
+      </video>
+      <a href="./index.html"
+        ><img
+          src="./images/LogoColor.png"
+          class="LogoPrincipal"
+          alt="Logo Scout de Argentina"
+      /></a>
+      <div class="btn-menu">
+        <label for="btn-menu"
+          ><img src="./images/LogoMenu.webp" alt="MENU" class="LogoMenu"
+        /></label>
+      </div>
+      <div class="titulo">
+        <h1>Hunt or be Hunted</h1>
+      </div>
+      <div class="montanasAbajo"></div>
+    </header>
+    <!--FIN ENCABEZADO -->
+    <!-- BARRA DE NAVEGACION DESPLEGABLE -->
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+      <div class="cont-menu">
+        <nav>
+          <a href="#">Inicio</a>
+          <a href="#hunt">Hunt or be Hunted</a>
+          <a href="#historia">Historia</a>
+          <a href="#legales">Legales</a>
+        </nav>
+        <label for="btn-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+          >
+            <path
+              fill="white"
+              d="M3.64 2.27L7.5 6.13l3.84-3.84A.92.92 0 0 1 12 2a1 1 0 0 1 1 1a.9.9 0 0 1-.27.66L8.84 7.5l3.89 3.89A.9.9 0 0 1 13 12a1 1 0 0 1-1 1a.92.92 0 0 1-.69-.27L7.5 8.87l-3.85 3.85A.92.92 0 0 1 3 13a1 1 0 0 1-1-1a.9.9 0 0 1 .27-.66L6.16 7.5L2.27 3.61A.9.9 0 0 1 2 3a1 1 0 0 1 1-1c.24.003.47.1.64.27Z"
+            />
+          </svg>
+        </label>
+      </div>
+    </div>
+    <!--FIN BARRA DE NAVEGACION DESPLEGABLE -->
+    <!-- PRINCIPAL -->
+    <main>
+      <h2 id="hunt">Be the Hunter, be the best</h2>
+      <iframe
+        width="892"
+        height="502"
+        src="https://www.youtube.com/embed/FAfWZzEjJHI"
+        title="HUNT OR BE HUNTED by Jägermeister"
+        frameborder="0"
+        webkit-playsinline=""
+        playsinline=""
+      ></iframe>
+      <div class="noche">
+        <div class="montanasArriba"></div>
+        <h3>La noche es tuya, los pecados florecen</h3>
+        <div class="pinos"></div>
+      </div>
+      <div class="relleno"></div>
+      <section id="historia">
+        <div class="montanasArriba" style="margin-top: 0;"></div>
+        <div class="intro">
+          <h3>Since 1935</h3>
+          <p>
+            Su receta no ha cambiado, su popularidad va en aumento. ¿Quién
+            habría imaginado que lo que comenzó como una bebida festiva para
+            cazadores daría origen a una historia tan viva, rica y variada como
+            nuestro propio licor icónico?
+          </p>
+          <div class="historia_container">
+            <div class="historia_item">
+              <h4>Una Leyenda...</h4>
+              <p>
+                Nuestro llamativo logotipo está inspirado en la historia de San
+                Huberto. Un buen día Huberto, que era cazador, tuvo una visión
+                de un imponente ciervo con una brillante cruz entre las astas.
+                Esta visión lo transformó y a partir de ese momento defendió el
+                respeto a la naturaleza, convirtiéndose en el santo patrón de
+                los cazadores. Curt Mast pensó que esta impactante historia era
+                ideal para su potente licor y adoptó el emblema del ciervo en
+                honor al verdadero "Maestro de la Caza".
+              </p>
+            </div>
+            <div class="historia_item">
+              <h4>Curt Mast</h4>
+              <p>
+                Fue el hijo de Wilhelm Mast, Curt, el que cambió el rumbo del
+                negocio familiar de la familia, dedicada a la producción de
+                vinagre. Pasaron unos años hasta que perfeccionó la receta de
+                Jägermeister, elaborada con 56 ingredientes botánicos, pero
+                creemos que la espera valió la pena. A día de hoy los ojos de
+                nuestro fundador, inmortalizados en piedra, siguen custodiando
+                su creación.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="legales">
+      <div class="container">
+        <p>Copyright &copy; 2023 Jägermeister. Todos los derechos reservados.</p>
+        <p>Prohibida su venta a menores de 18 años</p>
+        <ul>
+          <li><a href="#">Ir arriba</a></li>
+          <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+          <li><a href="#">Politica de privacidad</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
